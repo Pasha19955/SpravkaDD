@@ -44,5 +44,14 @@ namespace SpravkaDD
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        public void Sum(object sender, RoutedEventArgs e)
+        {
+            double x,y,z;
+            x = Convert.ToDouble(textBox.Text);
+            y = Convert.ToDouble(textBox1.Text);
+            z = x + y;
+            textBlock2.Text = z.ToString();
+        }
     }
 }
